@@ -1,0 +1,318 @@
+%!TEX TS-program = xelatex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\rfoot{Page \thepage \hspace{1pt}}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{H{\"a}m{\"a}l{\"a}inen}{Aleksi}{ \urlstyle{same}
+% \href{http://debarghyadas.com}{debarghyadas.com}| \href{http://fb.co/dd}{fb.co/dd}\\
+\href{mailto:aleksijonathanhamalainen@gmail.com}{aleksijonathanhamalainen@gmail.com} | +358 40 654 0297 
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{About Me}
+% I am soon to be graduate in Machine learning.  
+For the last two years, I have \\ 
+focused on building a theoretical \\
+base in the field of intelligent systems.
+Now, I am looking for a job in the field. \\     
+% I am fond of building intelligent systems. 
+% I am currently working on my Master's Thesis at Intelligent Robotics research group in Aalto University.
+On my free time, I go fishing, hiking, \\ or attend a triathlon.
+\sectionsep
+
+\section{Education} 
+
+%\subsection{Tsinghua University}
+%\descript{Tsinghua International Summer School:  Deep Learning}
+%\location{Jul 2017 | Beijing, China}
+%\sectionsep
+%
+%\subsection{Aalto University}
+%\descript{B.Sc, Industrial Engineering \\ and Management}
+%\location{Nov 2017 | Helsinki, Finland}
+%\location{With Honors}
+%\location{Minor: Computer Science}
+
+\subsection{Aalto University}
+\descript{M.Sc, Machine Learning and Data Mining}
+\location{Feb 2019 | Helsinki, Finland}
+\location{GPA: 4.5 / 5.0}
+\location{Minor: Robotics}
+\sectionsep
+
+\subsection{Tsinghua University}
+\descript{Tsinghua International Summer School:  Deep Learning}
+\location{Jul 2017 | Beijing, China}
+\sectionsep
+
+\subsection{Aalto University}
+\descript{B.Sc, Industrial Engineering \\ and Management}
+\location{Nov 2017 | Helsinki, Finland}
+\location{GPA: 4.1 / 5.0}
+\location{Minor: Computer Science}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+%Facebook:// \href{https://facebook/dd}{\bf dd} \\
+Github:// \href{https://github.com/gamleksi}{\bf gamleksi} \\
+LinkedIn://  \href{https://www.linkedin.com/in/aleksi-hamalainen}{\bf aleksi-hamalainen} \\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+% \subsection{Graduate}
+\textbullet{} Computational inverse problems \\
+% Advanced Probabilistic Methods in Machine Learning \\
+\textbullet{} Bayesian Data Analysis \\
+\textbullet{} Deep Learning \\
+\textbullet{} Digital and Optimal Control \\
+\textbullet{} Non-linear Filtering and \\ Parameter Estimation \\
+\textbullet{} Manipulation, Decision Making and Learning in Robotics \\
+\textbullet{} Programming Parallel Computers  \\
+\textbullet{} Euclidean Spaces \\
+\sectionsep
+
+% \subsection{Undergraduate}
+% Information Retrieval \\
+% Operating Systems \\
+% Artificial Intelligence + Practicum \\
+% Functional Programming \\
+% Computer Graphics + Practicum \\
+% {\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
+% Unix Tools and Scripting \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+% \subsection{Technical Skills}
+\location{Experienced:}
+Python \textbullet{} C++ \textbullet{} Matlab \textbullet{} ROS \\
+MuJoCo \textbullet{} Simulink \textbullet{} PyTorch \\
+TensorFlow \textbullet{}  Ubuntu \textbullet{} MacOs  \\
+% \location{Over 1000 lines:}
+\location{Familiar:}
+Scala \textbullet{} Javascript \textbullet{} CSS \textbullet{} React \\ 
+XML  \textbullet{}   
+MySQL \textbullet{} C \textbullet{} Cuda \textbullet{} Blender \\    
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{ Intelligent Robotics group, Aalto University \\}
+\descript{| Msc Thesis worker }
+\location{Aug 2018 - Present | Helsinki, Finland}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+I am currently developing a reinforcement learning based system that can perform based on image data a robotic manipulation task in the real world. With domain randomization and behavioral cloning, the system can be solely taught in a simulation, from which the learned model can be transferred into a real environment. Robotic Operating System, MoveIt!, and MuJoCo are utilized.      
+\sectionsep
+
+\runsubsection{Intelligent Robotics group}
+\descript{| Research Intern }
+\location{May 2018 – Jul 2018 | Helsinki, Finland}
+I conducted a domain randomization method for affordance detection for a robotic manipulation task. The method was developed with Blender, a 3D computer graphics software. A target environment was first modeled with Blender. Images of the environment and their respective affordance labeled images were rendered. Properties, such as textures, positions, shape, scale of objects in the environment were randomized for each image.   
+
+% \begin{tightemize}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \item 52 out of 2500 applicants chosen to be a KPCB Fellow 2014.
+% \item Led and shipped Yoda - the admin interface for the new Phoenix platform. 
+% \item Full-stack developer - Wrote and reviewed code for JS using Backbone, Jade, Stylus and Require and Scala using Play
+% \end{tightemize}
+\sectionsep
+
+% \runsubsection{Google}
+% \descript{| Software Engineering Intern }
+% \location{May 2013 – Aug 2013 | Mountain View, CA}
+% \begin{tightemize}
+% \item Worked on the YouTube Captions team, in Javascript and Python to plan, to design and develop the full stack to add and edit Automatic Speech Recognition captions. In production.
+% \item Created a backbone.js-like framework for the Captions editor.
+% \end{tightemize}
+% \sectionsep
+% 
+% \runsubsection{Phabricator}
+% \descript{| Open Source Contributor \& Team Leader}
+% \location{Jan 2013 – May 2013 | Palo Alto, CA \& Ithaca, NY}
+% \begin{tightemize}
+% \item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.
+% \item I created the Meme generator and more in PHP and Shell.
+% \item Led a team from MIT, Cornell, IC London and UHelsinki for the project.
+% \end{tightemize}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Startups 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\runsubsection{Junction Hackathon}
+\descript{| Board member}
+\location{Jan 2017 – Present | Helsinki, Finland}
+I am part of the board of Junction hackathon which functions as an independent company since January 2017. Junction has developed into an international hackathon organized in Finland, Japan, Vietnam, China, Hungary, and Saudi Arabia.
+\sectionsep
+
+\runsubsection{Aalto Entrepreneurship Society}
+\descript{| President}
+\location{Jan 2016 – Dec 2016 | Helsinki, Finland}
+Aaltoes is Europe's most active entrepreneurship society, and, as a key player in European startup scene, it has founded Slush and Junction to name a few.
+As president, I was responsible for team building, strategy, and growth. We organized Junction hackathon for the second time, and scaled the event to 1500 participants from 70 countries, which resulted in a world-class hackathon. I got selected to the list of top 100 information technology influencers in Finland in 2016: \href{https://www.tivi.fi/Kaikki_uutiset/tassa-ovat-it-alan-100-vaikuttajaa-2016-6604873}{\underline{the list in Finnish}.}
+\sectionsep
+
+\runsubsection{Junction Hackathon}
+\descript{| Head of Participants}
+\location{Jun 2015 – Dec 2015 | Helsinki, Finland}
+I gathered 500 participants from 30 countries for the first Junction hackathon.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Mentions} 
+% \begin{tabular}{rl}
+% 2018 & Junction hackathon winner \\ 
+% 
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Projects 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects} 
+% \descript{hello}
+\subsection{Imitation learning for an RC car}
+A hackathon project, where an RC car agent imitates driving on a track based on gathered driving data. 
+\sectionsep
+
+% \subsection{Deep learning project}
+% I gathered 500 participants from 30 countries for the first Junction hackathon. 
+% \sectionsep
+
+\subsection{Self-Supervised Learning from Video}
+Replication of the introduced model in \textit{Time-Contrastive Networks: Self-Supervised Learning from Video} for a manipulation task in a simulation  
+\sectionsep
+
+% \subsection{Data mining}
+% Several community detection algorithms were introduced for SNAP datasets.  
+% \sectionsep
+
+\subsection{Path tracer}
+A course project built with C++, where I developed a data structure accelerator and parallelization for the path tracer.
+\sectionsep
+
+\subsection{Registration system for Junction}
+A registration platform for 1500 participants built with React and Express for Junction 2016. 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Hobbies 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
